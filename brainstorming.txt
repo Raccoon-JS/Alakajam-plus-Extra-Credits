@@ -9,5 +9,12 @@ Five Extra Challenges:
 - Extra Remix (Remix feature/asset from your previous projects.)
 - "Extra"-Vert (Make a game that can be played with other people, in person.)
 
+Possible genres:
+- Visual Novel
+-- changing images
+--- create narrative through Kuleshov effect
+-- Hyperlink Story (https://tvtropes.org/pmwiki/pmwiki.php/Main/HyperlinkStory)
+--- That's too ambitious
+
 6th Alakajam!:
 Theme - ???
