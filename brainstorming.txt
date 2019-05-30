@@ -3,11 +3,11 @@
 ECGJ 4:
 Theme - CONNECT (inspired from Hideo Kojima's idea for Death Stranding)
 Five Extra Challenges:
-- Monochromatic
-- Kuleshov Effect
-- All Open Source
-- ?????
-- ?????
+- Extra Monochromatic (Use only 2 color palette.)
+- Extra Kuleshov Effect (Follow the principles of the Kuleshov Effect to your advantage.)
+- Extra Open (Make Everything Open Source.)
+- Extra Remix (Remix feature/asset from your previous projects.)
+- "Extra"-Vert (Make a game that can be played with other people, in person.)
 
 6th Alakajam!:
 Theme - ???
