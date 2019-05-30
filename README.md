@@ -12,3 +12,5 @@ May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)
 May 31st 2019 2 PM Central Time to June 2nd (or 3rd) 2 PM (48/72 hours)
 
 ![6th Alakajam!](https://i.imgur.com/0SPtSQA.png)
+
+![possible themes](https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/shortlist_alakajam_themes.png)
