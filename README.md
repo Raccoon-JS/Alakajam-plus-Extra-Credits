@@ -8,6 +8,10 @@ May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)
 
 ![ECGJ4](https://i.imgur.com/JiLZqQF.png?1)
 
+### ECGJ4 Theme
+
+CONNECT
+
 ## 6th Alakajam!
 May 31st 2019 2 PM Central Time to June 2nd (or 3rd) 2 PM (48/72 hours)
 
