@@ -6,11 +6,11 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 Extra Credits Game Jam 4:
 May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)
 
-![ECGJ4](https://i.imgur.com/JiLZqQF.png)
+![ECGJ4](https://i.imgur.com/JiLZqQF.png?1)
 
 6th Alakajam!:
 May 31st 2019 2 PM Central Time to June 2nd (or 3rd) 2 PM (48/72 hours)
 
-![6th Alakajam!](https://i.imgur.com/0SPtSQA.png)
+![6th Alakajam!](https://i.imgur.com/0SPtSQA.png?1)
 
 ![possible themes](https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/shortlist_alakajam_themes.png)
