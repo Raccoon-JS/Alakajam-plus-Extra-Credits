@@ -1,7 +1,7 @@
 # 6th Alakajam! + Extra Credits Game Jam 4
 An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcements) and [Extra Credits Game Jam 4](https://itch.io/jam/extra-credits-game-jam-4)
 
-![Two Game Jams Together](https://i.imgur.com/EzFgM2G.png)
+![Two Game Jams Together](https://i.imgur.com/EzFgM2G.png?1)
 
 ## Extra Credits Game Jam 4
 May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)
