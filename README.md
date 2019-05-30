@@ -10,6 +10,8 @@ May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)
 
 ### ECGJ4 Theme
 
+**CONNECT**
+
 ![CONNECT](https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/connection.png)
 
 ### ECGJ4 Challenges
