@@ -21,6 +21,7 @@ Possible genres:
 -- But you need to find the correct path
 --- This would depends on the Alakajam theme
 --- Kuleshov effect
+- Visual Novel + Choose Your Adventure Story + Dragon's Lair + minigame
 
 Working titles:
 - Sax & Violet
@@ -29,4 +30,4 @@ Working titles:
 -- 2 + 2 = 5
 
 6th Alakajam!:
-Theme - ???
+Theme - Duel

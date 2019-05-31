@@ -55,3 +55,11 @@ May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)
 <p align = "center">
 <img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/shortlist_alakajam_themes.png">
 </p>
+
+### 6th Alakajam! Theme
+
+<p align = "center">
+<b>DUEL<b>
+<br>
+<img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/Alakajam-6-theme-Duel.png">
+</p>
