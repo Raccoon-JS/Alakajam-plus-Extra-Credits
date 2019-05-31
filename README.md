@@ -5,7 +5,7 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 
 ![First Opening Animation](https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/small-Alakajam-game-intro.gif)
 
-![Two Game Jams Together](https://i.imgur.com/EzFgM2G.png?1)
+![Two Game Jams Together](https://i.imgur.com/EzFgM2G.png?2)
 
 ### Chosen Color Palette
 ![color palette](https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/color-palettes/two_color_palette_reference_2.png)
