@@ -33,7 +33,7 @@ May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)
 <p align="center">
 <b>CONNECT</b>
 <br>
-<img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/connection.png">
+<img height="320" width="320" src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/connection.png">
 </p>
 
 ### ECGJ4 Challenges
