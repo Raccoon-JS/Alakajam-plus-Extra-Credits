@@ -3,6 +3,9 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 
 ![Two Game Jams Together](https://i.imgur.com/EzFgM2G.png?1)
 
+### Chosen Color Palette
+![color palette](https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/color-palettes/two_color_palette_reference_2.png)
+
 ## Extra Credits Game Jam 4
 **May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)**
 
