@@ -4,10 +4,11 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 <p align="center" >
 <b>
 (as of May 30 9:54 PM Central Time)
-</b></p>
+</b>
+</p>
 <p align="center">
 <img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/small-Alakajam-game-intro.gif">
-
+<br>
 <img src="https://i.imgur.com/EzFgM2G.png?2">
 </p>
 
@@ -21,26 +22,30 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 <b>
 May 30th 2019 5 PM Central Time to June 4th 9 PM (100 hours)
 </b>
-
+<br>
 <img src="https://i.imgur.com/JiLZqQF.png?1">
 </p>
 ### ECGJ4 Theme
+
 <p align="center">
 <b>CONNECT</b>
-
+<br>
 <img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/connection.png">
 </p>
 ### ECGJ4 Challenges
+
 <p align="center">
 <img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/ec-challenges.png">
 </p>
 ## 6th Alakajam!
+
 <p align="center">
 <b>May 31st 2019 2 PM Central Time to June 2nd (or 3rd) 2 PM (48/72 hours)</b>
-
+<br>
 <img src="https://i.imgur.com/0SPtSQA.png?1">
 </p>
 ### Possible themes
+
 <p align = "center">
 <img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/shortlist_alakajam_themes.png">
 </p>
