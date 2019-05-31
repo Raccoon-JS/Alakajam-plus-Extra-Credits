@@ -12,10 +12,12 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 <img src="https://i.imgur.com/EzFgM2G.png?2">
 </p>
 
-### Chosen Color Palette
+### Chosen Color Palettes
 
 <p align="center">
 <img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/color-palettes/two_color_palette_reference_2.png">
+<br>
+<img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/color-palettes/two_color_palette_reference_3.png">
 </p>
 
 ## Extra Credits Game Jam 4
