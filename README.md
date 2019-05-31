@@ -18,6 +18,8 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 <img height="250" width="500" src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/color-palettes/two_color_palette_reference_2.png">
 <br>
 <img height="250" width="500" src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/color-palettes/two_color_palette_reference_3.png">
+<br>
+<img height="250" width="500" src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/color-palettes/two_color_palette_reference_4.png">
 </p>
 
 ## Extra Credits Game Jam 4
