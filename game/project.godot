@@ -16,8 +16,31 @@ _global_script_class_icons={
 [application]
 
 config/name="Extra-Alakajam-Credits"
+run/main_scene="res://scenes/opening_logos.tscn"
+boot_splash/image="res://images/new_Godot_boot_splash.png"
+boot_splash/bg_color=Color( 0.756863, 0.870588, 0.886275, 1 )
 config/icon="res://icon.png"
+
+[autoload]
+
+global="*res://scripts/global.gd"
+
+[display]
+
+window/size/width=800
+window/size/height=800
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[input]
+
+left_mouse_button_click={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
 
 [rendering]
 
+environment/default_clear_color=Color( 0.756863, 0.870588, 0.886275, 1 )
 environment/default_environment="res://default_env.tres"
