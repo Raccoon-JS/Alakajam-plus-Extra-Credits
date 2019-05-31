@@ -9,7 +9,11 @@ Five Extra Challenges:
 - Extra Remix (Remix feature/asset from your previous projects.)
 - "Extra"-Vert (Make a game that can be played with other people, in person.)
 
-Possible genres:
+6th Alakajam!:
+Theme - DUEL
+
+Possible genres and ideas:
+- "Running" game where the haunted truck is chasing after the man (inspired by the Spielberg movie DUEL)
 - Visual Novel
 -- changing images
 --- create narrative through Kuleshov effect
@@ -21,13 +25,18 @@ Possible genres:
 -- But you need to find the correct path
 --- This would depends on the Alakajam theme
 --- Kuleshov effect
-- Visual Novel + Choose Your Adventure Story + Dragon's Lair + minigame
+- Visual Novel + Choose Your Adventure Story + Dragon's Lair <--- My decision
+-- Story:
+--- Hyperlink Story (https://tvtropes.org/pmwiki/pmwiki.php/Main/HyperlinkStory)
+--- The gun man tries to have a rematch, only to find out he can't
+--- Two stories that revolve around that one duel match
+-- Technicality:
+--- It has to be 2:1 ratio, not 1:1 as usual.
 
 Working titles:
+(Before the announcement of Alakajam! theme)
 - Sax & Violet
 - Boy Meets Girl
 - 1 + 2 = 3
 -- 2 + 2 = 5
 
-6th Alakajam!:
-Theme - Duel
