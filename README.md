@@ -1,6 +1,9 @@
 # 6th Alakajam! + Extra Credits Game Jam 4
 An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcements) and [Extra Credits Game Jam 4](https://itch.io/jam/extra-credits-game-jam-4)
 
+(as of May 30 9:54 PM Central Time)
+![First Opening Animation](https://i.imgur.com/UnkaYWe.gifv)
+
 ![Two Game Jams Together](https://i.imgur.com/EzFgM2G.png?1)
 
 ### Chosen Color Palette
