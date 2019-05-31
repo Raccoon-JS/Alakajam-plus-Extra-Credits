@@ -26,6 +26,11 @@ Possible genres and ideas:
 --- This would depends on the Alakajam theme
 --- Kuleshov effect
 - Visual Novel + Choose Your Adventure Story + Dragon's Lair <--- My decision
+-- Color(s):
+--- You already picked the first one.
+--- Now you have to pick the other one
+---- #C1E3D6 & #419482
+--- #C1DEE2 & #417D95 for the left story, and #C1E3D6 & #419482 for the right story
 -- Story:
 --- Hyperlink Story (https://tvtropes.org/pmwiki/pmwiki.php/Main/HyperlinkStory)
 --- The gun man tries to have a rematch, only to find out he can't
@@ -39,4 +44,5 @@ Working titles:
 - Boy Meets Girl
 - 1 + 2 = 3
 -- 2 + 2 = 5
+(After the announcement of Alakajam! theme)
 
