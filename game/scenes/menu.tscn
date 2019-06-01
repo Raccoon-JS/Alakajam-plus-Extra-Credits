@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/menu.gd" type="Script" id=1]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=2]
@@ -19,6 +19,67 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=4]
 size = 60
 font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "beginning-fade"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("bg_and_title:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("button_space:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "ending-fade"
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("transition/rectangle:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "logo-moving"
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("bg_and_title/logo:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.075, 1.075 ), Vector2( 1.05, 1.05 ) ]
+}
 
 [node name="menu" type="Node"]
 script = ExtResource( 1 )
@@ -41,11 +102,12 @@ align = 1
 valign = 1
 
 [node name="logo" type="Sprite" parent="bg_and_title"]
-position = Vector2( 615, 280 )
-scale = Vector2( 1.025, 1 )
+position = Vector2( 607.683, 268.75 )
+scale = Vector2( 1.075, 1.075 )
 texture = ExtResource( 3 )
 
 [node name="button_space" type="Control" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_top = 400.0
 margin_right = 1200.0
 margin_bottom = 600.0
@@ -79,6 +141,21 @@ margin_bottom = 200.0
 custom_fonts/font = SubResource( 4 )
 text = "credits"
 flat = true
+
+[node name="transition" type="Control" parent="."]
+visible = false
+margin_right = 1200.0
+margin_bottom = 600.0
+
+[node name="rectangle" type="ColorRect" parent="transition"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 1200.0
+margin_bottom = 600.0
+
+[node name="animations" type="AnimationPlayer" parent="."]
+anims/beginning-fade = SubResource( 5 )
+anims/ending-fade = SubResource( 7 )
+anims/logo-moving = SubResource( 6 )
 [connection signal="mouse_entered" from="button_space/buttons/quit" to="." method="_on_quit_mouse_entered"]
 [connection signal="mouse_exited" from="button_space/buttons/quit" to="." method="_on_quit_mouse_exited"]
 [connection signal="pressed" from="button_space/buttons/quit" to="." method="_on_quit_pressed"]
@@ -86,3 +163,5 @@ flat = true
 [connection signal="mouse_exited" from="button_space/buttons/start" to="." method="_on_start_mouse_exited"]
 [connection signal="pressed" from="button_space/buttons/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="button_space/buttons/credits" to="." method="_on_credits_pressed"]
+[connection signal="animation_finished" from="animations" to="." method="_on_animations_finished"]
+[connection signal="animation_started" from="animations" to="." method="_on_animations_started"]
