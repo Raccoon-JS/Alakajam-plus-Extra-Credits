@@ -3,9 +3,11 @@ extends Node
 var current_scene = null
 var new_scene = null
 var players
+var character
 
 func _ready():
 	players = 0
+	character = "no one"
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
 	pass
