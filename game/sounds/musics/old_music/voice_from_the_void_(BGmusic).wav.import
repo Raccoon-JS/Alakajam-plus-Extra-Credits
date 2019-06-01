@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice_from_the_void_(BGmusic).wav-f27c0aa35ac5bc78a9b0980ccfdda36c.sample"
+
+[deps]
+
+source_file="res://sounds/musics/old_music/voice_from_the_void_(BGmusic).wav"
+dest_files=[ "res://.import/voice_from_the_void_(BGmusic).wav-f27c0aa35ac5bc78a9b0980ccfdda36c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

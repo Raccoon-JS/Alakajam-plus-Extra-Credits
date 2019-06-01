@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ThisMundaneMoment.wav-9d0e1f2969d86824e9ecea5005a5bb9f.sample"
+
+[deps]
+
+source_file="res://sounds/musics/new_musics/ThisMundaneMoment.wav"
+dest_files=[ "res://.import/ThisMundaneMoment.wav-9d0e1f2969d86824e9ecea5005a5bb9f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

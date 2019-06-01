@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Circular_Diary_theme_for_credits_(remixed).wav-679337940e0be21472b87694c6530c06.sample"
+
+[deps]
+
+source_file="res://sounds/musics/old_music/Circular_Diary_theme_for_credits_(remixed).wav"
+dest_files=[ "res://.import/Circular_Diary_theme_for_credits_(remixed).wav-679337940e0be21472b87694c6530c06.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

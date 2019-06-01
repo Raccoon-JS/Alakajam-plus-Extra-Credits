@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/JessesTheme-1.wav-8986aec209a4f74f303634a6f931568e.sample"
+
+[deps]
+
+source_file="res://sounds/musics/new_musics/JessesTheme-1.wav"
+dest_files=[ "res://.import/JessesTheme-1.wav-8986aec209a4f74f303634a6f931568e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

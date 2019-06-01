@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BadWounds-MenuMusic-Song.wav-97af5d803e01f38e2210ad6ec7fcf328.sample"
+
+[deps]
+
+source_file="res://sounds/musics/new_musics/BadWounds-MenuMusic-Song.wav"
+dest_files=[ "res://.import/BadWounds-MenuMusic-Song.wav-97af5d803e01f38e2210ad6ec7fcf328.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

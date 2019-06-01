@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/JamesTheme-4.wav-1238f63d401143b970694a89dfd5c1df.sample"
+
+[deps]
+
+source_file="res://sounds/musics/new_musics/JamesTheme-4.wav"
+dest_files=[ "res://.import/JamesTheme-4.wav-1238f63d401143b970694a89dfd5c1df.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/beyond_idleness_(BGmusic).wav-56a93e373ede1933624a3ed0cb7847ad.sample"
+
+[deps]
+
+source_file="res://sounds/musics/old_music/beyond_idleness_(BGmusic).wav"
+dest_files=[ "res://.import/beyond_idleness_(BGmusic).wav-56a93e373ede1933624a3ed0cb7847ad.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

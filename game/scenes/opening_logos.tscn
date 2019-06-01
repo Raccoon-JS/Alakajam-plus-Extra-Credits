@@ -46,8 +46,8 @@ tracks/1/keys = {
 script = ExtResource( 1 )
 
 [node name="made_by" type="Node2D" parent="."]
-position = Vector2( 400, 140 )
-scale = Vector2( 2, 2 )
+position = Vector2( 600, 100 )
+scale = Vector2( 1.2, 1.2 )
 
 [node name="words" type="Label" parent="made_by"]
 margin_left = -80.0
@@ -68,7 +68,8 @@ region_enabled = true
 region_rect = Rect2( 103.891, 63.5283, 436.356, 272.723 )
 
 [node name="other_logos" type="Node2D" parent="."]
-position = Vector2( 400, 600 )
+position = Vector2( 600, 450 )
+scale = Vector2( 0.8, 0.8 )
 
 [node name="Label" type="Label" parent="other_logos"]
 margin_left = -200.0
