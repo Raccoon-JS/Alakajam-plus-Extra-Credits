@@ -3,12 +3,11 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 
 <p align="center" >
 <b>The (working) title of the game: CONNECT THE WOUNDS</b>
-</p><br>
-<p align="center">
-<img height="250" width="500" src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/eyes_of_characters.png">
 </p>
 <p align="center">
 <img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/complete_menu_screen.gif">
+<br>
+<img height="250" width="500" src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/eyes_of_characters.png">
 <br>
 <img src="https://i.imgur.com/EzFgM2G.png?2">
 </p>
