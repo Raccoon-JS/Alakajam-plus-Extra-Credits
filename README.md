@@ -9,7 +9,7 @@ An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcement
 </b>
 </p>
 <p align="center">
-<img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/menu_screen.gif">
+<img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/complete_menu_screen.gif">
 <br>
 <img src="https://i.imgur.com/EzFgM2G.png?2">
 </p>

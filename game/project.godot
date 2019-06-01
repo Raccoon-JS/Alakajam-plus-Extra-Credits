@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Extra-Alakajam-Credits"
+config/name="Connect The Wounds"
 run/main_scene="res://scenes/opening_logos.tscn"
 boot_splash/image="res://images/new_Godot_boot_splash.png"
 boot_splash/bg_color=Color( 0.756863, 0.870588, 0.886275, 1 )

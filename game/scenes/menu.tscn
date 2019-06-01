@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/menu.gd" type="Script" id=1]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://images/Connect_The_Wounds.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
@@ -38,6 +39,11 @@ custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "CONNECT THE WOUNDS"
 align = 1
 valign = 1
+
+[node name="logo" type="Sprite" parent="bg_and_title"]
+position = Vector2( 615, 280 )
+scale = Vector2( 1.025, 1 )
+texture = ExtResource( 3 )
 
 [node name="button_space" type="Control" parent="."]
 margin_top = 400.0

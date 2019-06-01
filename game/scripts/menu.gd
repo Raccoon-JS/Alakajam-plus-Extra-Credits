@@ -16,12 +16,14 @@ func normal_color():
 	$bg_and_title/background.color = blue
 	$bg_and_title/title.modulate = deep_blue
 	$button_space/buttons.modulate = deep_blue
+	$bg_and_title/logo.modulate = deep_blue
 	pass
 
 func _on_quit_mouse_entered():
 	$bg_and_title/background.color = red
 	$bg_and_title/title.modulate = deep_red
 	$button_space/buttons.modulate = deep_red
+	$bg_and_title/logo.modulate = deep_red
 	pass # Replace with function body.
 
 func _on_quit_mouse_exited():
@@ -33,6 +35,7 @@ func _on_start_mouse_entered():
 	$bg_and_title/background.color = green
 	$bg_and_title/title.modulate = deep_green
 	$button_space/buttons.modulate = deep_green
+	$bg_and_title/logo.modulate = deep_green
 	pass # Replace with function body.
 
 func _on_start_mouse_exited():
