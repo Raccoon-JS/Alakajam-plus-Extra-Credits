@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=2]
@@ -10,6 +10,18 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
 font_data = ExtResource( 2 )
 
 [node name="1" type="Node"]
@@ -39,16 +51,15 @@ rect_pivot_offset = Vector2( 300, 300 )
 custom_constants/separation = 100
 alignment = 1
 
-[node name="time_and_points" type="HBoxContainer" parent="left_side/materials"]
-margin_top = 189.0
+[node name="time_and_points" type="VBoxContainer" parent="left_side/materials"]
+margin_top = 101.0
 margin_right = 600.0
-margin_bottom = 230.0
-custom_constants/separation = 100
+margin_bottom = 193.0
+custom_constants/separation = 10
 alignment = 1
 
 [node name="time" type="Label" parent="left_side/materials/time_and_points"]
-margin_left = 82.0
-margin_right = 226.0
+margin_right = 600.0
 margin_bottom = 41.0
 custom_fonts/font = SubResource( 1 )
 text = "time: "
@@ -56,18 +67,48 @@ align = 1
 valign = 1
 
 [node name="points" type="Label" parent="left_side/materials/time_and_points"]
-margin_left = 326.0
-margin_right = 518.0
-margin_bottom = 41.0
+margin_top = 51.0
+margin_right = 600.0
+margin_bottom = 92.0
 custom_fonts/font = SubResource( 2 )
 text = "points: "
 align = 1
 valign = 1
 
-[node name="keys" type="HBoxContainer" parent="left_side/materials"]
-margin_top = 330.0
+[node name="key_labels" type="HBoxContainer" parent="left_side/materials"]
+margin_top = 293.0
 margin_right = 600.0
-margin_bottom = 410.0
+margin_bottom = 318.0
+custom_constants/separation = 100
+alignment = 1
+
+[node name="A" type="Label" parent="left_side/materials/key_labels"]
+margin_left = 179.0
+margin_right = 193.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 3 )
+text = "A"
+align = 1
+valign = 1
+
+[node name="S" type="Label" parent="left_side/materials/key_labels"]
+margin_left = 293.0
+margin_right = 307.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 4 )
+text = "S"
+
+[node name="D" type="Label" parent="left_side/materials/key_labels"]
+margin_left = 407.0
+margin_right = 421.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 5 )
+text = "D"
+
+[node name="keys" type="HBoxContainer" parent="left_side/materials"]
+margin_top = 418.0
+margin_right = 600.0
+margin_bottom = 498.0
 grow_horizontal = 0
 grow_vertical = 0
 custom_constants/separation = 20

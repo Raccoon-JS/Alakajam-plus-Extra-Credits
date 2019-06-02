@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
 [ext_resource path="res://images/Jesse_eye_red.jpg" type="Texture" id=2]
 [ext_resource path="res://images/James_eye_green.jpg" type="Texture" id=3]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://images/white_default.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -19,6 +20,30 @@ font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 24
 font_data = ExtResource( 4 )
 
 [node name="2" type="Node"]
@@ -58,20 +83,20 @@ texture = ExtResource( 3 )
 [node name="times_and_points" type="HBoxContainer" parent="."]
 margin_top = 420.0
 margin_right = 1200.0
-margin_bottom = 500.0
-custom_constants/separation = 120
+margin_bottom = 470.0
+custom_constants/separation = 160
 alignment = 1
 
 [node name="left" type="HBoxContainer" parent="times_and_points"]
-margin_left = 192.0
-margin_right = 540.0
-margin_bottom = 80.0
+margin_left = 172.0
+margin_right = 520.0
+margin_bottom = 50.0
 custom_constants/separation = 60
 
 [node name="left_time" type="Label" parent="times_and_points/left"]
-margin_top = 19.0
+margin_top = 4.0
 margin_right = 120.0
-margin_bottom = 60.0
+margin_bottom = 45.0
 custom_fonts/font = SubResource( 1 )
 text = "time:"
 align = 1
@@ -79,24 +104,24 @@ valign = 1
 
 [node name="left_points" type="Label" parent="times_and_points/left"]
 margin_left = 180.0
-margin_top = 19.0
+margin_top = 4.0
 margin_right = 348.0
-margin_bottom = 60.0
+margin_bottom = 45.0
 custom_fonts/font = SubResource( 2 )
 text = "points:"
 align = 1
 valign = 1
 
 [node name="right" type="HBoxContainer" parent="times_and_points"]
-margin_left = 660.0
-margin_right = 1008.0
-margin_bottom = 80.0
+margin_left = 680.0
+margin_right = 1028.0
+margin_bottom = 50.0
 custom_constants/separation = 60
 
 [node name="right_time" type="Label" parent="times_and_points/right"]
-margin_top = 19.0
+margin_top = 4.0
 margin_right = 120.0
-margin_bottom = 60.0
+margin_bottom = 45.0
 custom_fonts/font = SubResource( 3 )
 text = "time:"
 align = 1
@@ -104,36 +129,155 @@ valign = 1
 
 [node name="right_points" type="Label" parent="times_and_points/right"]
 margin_left = 180.0
-margin_top = 19.0
+margin_top = 4.0
 margin_right = 348.0
-margin_bottom = 60.0
+margin_bottom = 45.0
 custom_fonts/font = SubResource( 4 )
 text = "points:"
 align = 1
 valign = 1
 
 [node name="left_keys" type="Control" parent="."]
-margin_top = 500.0
+margin_top = 480.0
 margin_right = 600.0
 margin_bottom = 600.0
 rect_pivot_offset = Vector2( 300, 50 )
 
-[node name="keys" type="HBoxContainer" parent="left_keys"]
+[node name="keys" type="VBoxContainer" parent="left_keys"]
 margin_right = 600.0
-margin_bottom = 120.0
+margin_bottom = 100.0
 rect_pivot_offset = Vector2( 300, 60 )
+
+[node name="labels" type="HBoxContainer" parent="left_keys/keys"]
+margin_right = 600.0
+margin_bottom = 25.0
+custom_constants/separation = 105
+alignment = 1
+
+[node name="A" type="Label" parent="left_keys/keys/labels"]
+margin_left = 174.0
+margin_right = 188.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 5 )
+text = "A"
+align = 1
+valign = 1
+
+[node name="S" type="Label" parent="left_keys/keys/labels"]
+margin_left = 293.0
+margin_right = 307.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 6 )
+text = "S"
+align = 1
+valign = 1
+
+[node name="D" type="Label" parent="left_keys/keys/labels"]
+margin_left = 412.0
+margin_right = 426.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 7 )
+text = "D"
+align = 1
+valign = 1
+
+[node name="key_images" type="HBoxContainer" parent="left_keys/keys"]
+margin_top = 29.0
+margin_right = 600.0
+margin_bottom = 109.0
+custom_constants/separation = 40
+alignment = 1
+
+[node name="left" type="TextureRect" parent="left_keys/keys/key_images"]
+margin_left = 140.0
+margin_right = 220.0
+margin_bottom = 80.0
+texture = ExtResource( 5 )
+
+[node name="center" type="TextureRect" parent="left_keys/keys/key_images"]
+margin_left = 260.0
+margin_right = 340.0
+margin_bottom = 80.0
+texture = ExtResource( 5 )
+
+[node name="right" type="TextureRect" parent="left_keys/keys/key_images"]
+margin_left = 380.0
+margin_right = 460.0
+margin_bottom = 80.0
+texture = ExtResource( 5 )
 
 [node name="right_keys" type="Control" parent="."]
 margin_left = 600.0
-margin_top = 500.0
+margin_top = 480.0
 margin_right = 1200.0
 margin_bottom = 600.0
 rect_pivot_offset = Vector2( 300, 50 )
 
-[node name="keys" type="HBoxContainer" parent="right_keys"]
+[node name="keys" type="VBoxContainer" parent="right_keys"]
 margin_right = 600.0
-margin_bottom = 120.0
+margin_bottom = 100.0
 rect_pivot_offset = Vector2( 300, 60 )
 
-[node name="timer" type="Timer" parent="."]
+[node name="labels" type="HBoxContainer" parent="right_keys/keys"]
+margin_right = 600.0
+margin_bottom = 25.0
+custom_constants/separation = 105
+alignment = 1
+
+[node name="J" type="Label" parent="right_keys/keys/labels"]
+margin_left = 174.0
+margin_right = 188.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 8 )
+text = "J"
+align = 1
+valign = 1
+
+[node name="K" type="Label" parent="right_keys/keys/labels"]
+margin_left = 293.0
+margin_right = 307.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 9 )
+text = "K"
+align = 1
+valign = 1
+
+[node name="L" type="Label" parent="right_keys/keys/labels"]
+margin_left = 412.0
+margin_right = 426.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 10 )
+text = "L"
+align = 1
+valign = 1
+
+[node name="key_images" type="HBoxContainer" parent="right_keys/keys"]
+margin_top = 29.0
+margin_right = 600.0
+margin_bottom = 109.0
+custom_constants/separation = 40
+alignment = 1
+
+[node name="left" type="TextureRect" parent="right_keys/keys/key_images"]
+margin_left = 140.0
+margin_right = 220.0
+margin_bottom = 80.0
+texture = ExtResource( 5 )
+
+[node name="center" type="TextureRect" parent="right_keys/keys/key_images"]
+margin_left = 260.0
+margin_right = 340.0
+margin_bottom = 80.0
+texture = ExtResource( 5 )
+
+[node name="right" type="TextureRect" parent="right_keys/keys/key_images"]
+margin_left = 380.0
+margin_right = 460.0
+margin_bottom = 80.0
+texture = ExtResource( 5 )
+
+[node name="left_timer" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="right_timer" type="Timer" parent="."]
 wait_time = 5.0
