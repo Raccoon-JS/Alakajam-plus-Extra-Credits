@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scripts/selections.gd" type="Script" id=1]
 [ext_resource path="res://images/Jesse_eye_red.jpg" type="Texture" id=2]
@@ -62,6 +62,22 @@ tracks/2/keys = {
 "values": [ Vector2( 240, 140 ), Vector2( -290, -180 ) ]
 }
 
+[sub_resource type="Animation" id=8]
+resource_name = "green_transit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("green_transition:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.493286 ),
+"transitions": PoolRealArray( 0.183011, 1 ),
+"update": 0,
+"values": [ Vector2( 2400, 0 ), Vector2( 1200, 0 ) ]
+}
+
 [sub_resource type="Animation" id=6]
 resource_name = "james_eye_large"
 length = 0.5
@@ -92,6 +108,22 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 0.0220971 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 1.1, 1.1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "red_transit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("red_transition:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 0.183011, 0.233258 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 1200, 0 ) ]
 }
 
 [node name="selections" type="Node"]
@@ -161,7 +193,6 @@ text = "James Connor"
 flat = true
 
 [node name="many_players" type="Control" parent="."]
-editor/display_folded = true
 margin_left = 200.0
 margin_top = 100.0
 margin_right = 1000.0
@@ -197,10 +228,26 @@ custom_colors/font_color_pressed = Color( 0.160784, 0.372549, 0.32549, 1 )
 text = "TWO PLAYERS"
 flat = true
 
+[node name="red_transition" type="ColorRect" parent="."]
+margin_left = -1200.0
+margin_right = 0.000488281
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 600, 300 )
+color = Color( 0.890196, 0.772549, 0.756863, 1 )
+
+[node name="green_transition" type="ColorRect" parent="."]
+margin_left = 1200.0
+margin_right = 2400.0
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 600, 300 )
+color = Color( 0.756863, 0.890196, 0.839216, 1 )
+
 [node name="animation" type="AnimationPlayer" parent="."]
 anims/gone = SubResource( 5 )
+anims/green_transit = SubResource( 8 )
 anims/james_eye_large = SubResource( 6 )
 anims/jesse_eye_large = SubResource( 7 )
+anims/red_transit = SubResource( 9 )
 [connection signal="tween_completed" from="background/squares/tween" to="." method="_on_green_square_tween_completed"]
 [connection signal="tween_started" from="background/squares/tween" to="." method="_on_tween_started"]
 [connection signal="mouse_entered" from="background/squares/Jesse_button" to="." method="_on_Jesse_button_mouse_entered"]

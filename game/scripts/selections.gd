@@ -32,6 +32,8 @@ func _on_animation_animation_finished(anim_name):
 	if anim_name == "gone":
 		gone_buttons()
 		global.goto_scene("res://scenes/2_players_game.tscn")
+	if anim_name == "red_transit" or anim_name == "green_transit":
+		to_the_single_playing_game()
 	pass # Replace with function body.
 
 func _on_green_square_tween_completed(object, key):
@@ -53,7 +55,7 @@ func _on_Jesse_button_mouse_exited():
 
 func _on_Jesse_button_pressed():
 	global.character = "Jesse"
-	to_the_single_playing_game()
+	$animation.play("red_transit")
 	pass # Replace with function body.
 
 func _on_James_button_mouse_entered():
@@ -66,5 +68,5 @@ func _on_James_button_mouse_exited():
 
 func _on_James_button_pressed():
 	global.character = "James"
-	to_the_single_playing_game()
+	$animation.play("green_transit")
 	pass # Replace with function body.
