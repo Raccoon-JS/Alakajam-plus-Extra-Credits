@@ -7,6 +7,10 @@ func gone_buttons():
 	$many_players.queue_free()
 	pass
 
+func to_the_single_playing_game():
+	global.goto_scene("res://scenes/1_player_game.tscn")
+	pass
+
 func _one_player_pressed():
 	global.players = 1
 	$many_players.visible = false
@@ -49,6 +53,7 @@ func _on_Jesse_button_mouse_exited():
 
 func _on_Jesse_button_pressed():
 	global.character = "Jesse"
+	to_the_single_playing_game()
 	pass # Replace with function body.
 
 func _on_James_button_mouse_entered():
@@ -61,4 +66,5 @@ func _on_James_button_mouse_exited():
 
 func _on_James_button_pressed():
 	global.character = "James"
+	to_the_single_playing_game()
 	pass # Replace with function body.
