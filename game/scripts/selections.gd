@@ -30,11 +30,11 @@ func _on_animation_animation_finished(anim_name):
 	pass # Replace with function body.
 
 func _on_green_square_tween_completed(object, key):
-	#if object.name == "green" and key == "margin_left":
-	$background/squares/James_button.visible = true
-	$background/squares/Jesse_button.visible = true
-	$background/squares/James_eye.visible = true
-	$background/squares/Jesse_eye.visible = true
+	if object and key:
+		$background/squares/James_button.visible = true
+		$background/squares/Jesse_button.visible = true
+		$background/squares/James_eye.visible = true
+		$background/squares/Jesse_eye.visible = true
 	
 	pass # Replace with function body.
 
