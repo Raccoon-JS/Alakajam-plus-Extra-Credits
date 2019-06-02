@@ -6,24 +6,23 @@
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=5]
 
-[sub_resource type="DynamicFont" id=6]
-size = 42
-font_data = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=5]
-size = 42
-font_data = ExtResource( 4 )
-
 [sub_resource type="DynamicFont" id=1]
-size = 40
-font_data = ExtResource( 5 )
+size = 42
+font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 42
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
 size = 40
 font_data = ExtResource( 5 )
 
-[sub_resource type="Animation" id=3]
-resource_name = "gone"
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 5 )
+
+[sub_resource type="Animation" id=5]
 length = 0.5
 step = 0.5
 tracks/0/type = "value"
@@ -63,7 +62,7 @@ tracks/2/keys = {
 "values": [ Vector2( 240, 140 ), Vector2( -290, -180 ) ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=6]
 resource_name = "james_eye_large"
 length = 0.5
 tracks/0/type = "value"
@@ -79,7 +78,7 @@ tracks/0/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1.1, 1.1 ) ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=7]
 resource_name = "jesse_eye_large"
 length = 0.5
 tracks/0/type = "value"
@@ -143,7 +142,7 @@ margin_left = 100.0
 margin_top = 520.0
 margin_right = 500.0
 margin_bottom = 570.0
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.635294, 0.427451, 0.4, 1 )
 custom_colors/font_color_hover = Color( 0.780392, 0.529412, 0.494118, 1 )
 text = "Jesse Capshaw"
@@ -155,7 +154,7 @@ margin_left = 700.0
 margin_top = 520.0
 margin_right = 1100.0
 margin_bottom = 570.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.254902, 0.580392, 0.509804, 1 )
 custom_colors/font_color_hover = Color( 0.372549, 0.815686, 0.721569, 1 )
 text = "James Connor"
@@ -180,7 +179,7 @@ alignment = 1
 margin_top = 3.0
 margin_right = 320.0
 margin_bottom = 50.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.254902, 0.580392, 0.509804, 1 )
 custom_colors/font_color_hover = Color( 0.160784, 0.372549, 0.32549, 1 )
 custom_colors/font_color_pressed = Color( 0.160784, 0.372549, 0.32549, 1 )
@@ -191,7 +190,7 @@ flat = true
 margin_top = 70.0
 margin_right = 320.0
 margin_bottom = 117.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0.254902, 0.580392, 0.509804, 1 )
 custom_colors/font_color_hover = Color( 0.160784, 0.372549, 0.32549, 1 )
 custom_colors/font_color_pressed = Color( 0.160784, 0.372549, 0.32549, 1 )
@@ -199,9 +198,9 @@ text = "TWO PLAYERS"
 flat = true
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/gone = SubResource( 3 )
-anims/james_eye_large = SubResource( 7 )
-anims/jesse_eye_large = SubResource( 8 )
+anims/gone = SubResource( 5 )
+anims/james_eye_large = SubResource( 6 )
+anims/jesse_eye_large = SubResource( 7 )
 [connection signal="tween_completed" from="background/squares/tween" to="." method="_on_green_square_tween_completed"]
 [connection signal="tween_started" from="background/squares/tween" to="." method="_on_tween_started"]
 [connection signal="mouse_entered" from="background/squares/Jesse_button" to="." method="_on_Jesse_button_mouse_entered"]
