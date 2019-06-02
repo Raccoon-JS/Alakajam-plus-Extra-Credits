@@ -1,6 +1,25 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
+[ext_resource path="res://images/Jesse_eye_red.jpg" type="Texture" id=2]
+[ext_resource path="res://images/James_eye_green.jpg" type="Texture" id=3]
+[ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 4 )
 
 [node name="2" type="Node"]
 script = ExtResource( 1 )
@@ -22,23 +41,82 @@ color = Color( 0.756863, 0.890196, 0.839216, 1 )
 
 [node name="left_screen" type="TextureRect" parent="."]
 margin_left = 100.0
-margin_top = 50.0
+margin_top = 20.0
 margin_right = 500.0
-margin_bottom = 450.0
+margin_bottom = 420.0
 rect_pivot_offset = Vector2( 200, 200 )
+texture = ExtResource( 2 )
 
 [node name="right_screen" type="TextureRect" parent="."]
 margin_left = 700.0
-margin_top = 50.0
+margin_top = 20.0
 margin_right = 1100.0
-margin_bottom = 450.0
+margin_bottom = 420.0
 rect_pivot_offset = Vector2( 200, 200 )
+texture = ExtResource( 3 )
+
+[node name="times_and_points" type="HBoxContainer" parent="."]
+margin_top = 420.0
+margin_right = 1200.0
+margin_bottom = 500.0
+custom_constants/separation = 120
+alignment = 1
+
+[node name="left" type="HBoxContainer" parent="times_and_points"]
+margin_left = 192.0
+margin_right = 540.0
+margin_bottom = 80.0
+custom_constants/separation = 60
+
+[node name="left_time" type="Label" parent="times_and_points/left"]
+margin_top = 19.0
+margin_right = 120.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 1 )
+text = "time:"
+align = 1
+valign = 1
+
+[node name="left_points" type="Label" parent="times_and_points/left"]
+margin_left = 180.0
+margin_top = 19.0
+margin_right = 348.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+text = "points:"
+align = 1
+valign = 1
+
+[node name="right" type="HBoxContainer" parent="times_and_points"]
+margin_left = 660.0
+margin_right = 1008.0
+margin_bottom = 80.0
+custom_constants/separation = 60
+
+[node name="right_time" type="Label" parent="times_and_points/right"]
+margin_top = 19.0
+margin_right = 120.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 3 )
+text = "time:"
+align = 1
+valign = 1
+
+[node name="right_points" type="Label" parent="times_and_points/right"]
+margin_left = 180.0
+margin_top = 19.0
+margin_right = 348.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 4 )
+text = "points:"
+align = 1
+valign = 1
 
 [node name="left_keys" type="Control" parent="."]
-margin_top = 480.0
+margin_top = 500.0
 margin_right = 600.0
 margin_bottom = 600.0
-rect_pivot_offset = Vector2( 300, 60 )
+rect_pivot_offset = Vector2( 300, 50 )
 
 [node name="keys" type="HBoxContainer" parent="left_keys"]
 margin_right = 600.0
@@ -47,12 +125,14 @@ rect_pivot_offset = Vector2( 300, 60 )
 
 [node name="right_keys" type="Control" parent="."]
 margin_left = 600.0
-margin_top = 480.0
+margin_top = 500.0
 margin_right = 1200.0
 margin_bottom = 600.0
-rect_pivot_offset = Vector2( 300, 60 )
+rect_pivot_offset = Vector2( 300, 50 )
 
 [node name="keys" type="HBoxContainer" parent="right_keys"]
 margin_right = 600.0
 margin_bottom = 120.0
 rect_pivot_offset = Vector2( 300, 60 )
+
+[node name="timer" type="Timer" parent="."]

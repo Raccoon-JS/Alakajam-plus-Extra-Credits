@@ -1,6 +1,7 @@
 extends Node
 
 func _ready():
+	$background/squares/tween.interpolate_property($background/squares/green,"margin_left",0.0,600.0,0.9,Tween.TRANS_CIRC,Tween.EASE_IN)
 	pass # Replace with function body.
 
 func gone_buttons():
@@ -14,7 +15,6 @@ func to_the_single_playing_game():
 func _one_player_pressed():
 	global.players = 1
 	$many_players.visible = false
-	$background/squares/tween.interpolate_property($background/squares/green,"margin_left",0.0,600.0,0.9,Tween.TRANS_CIRC,Tween.EASE_IN)
 	$background/squares/tween.start()
 	pass # Replace with function body.
 
@@ -32,17 +32,16 @@ func _on_animation_animation_finished(anim_name):
 	if anim_name == "gone":
 		gone_buttons()
 		global.goto_scene("res://scenes/2_players_game.tscn")
-	if anim_name == "red_transit" or anim_name == "green_transit":
-		to_the_single_playing_game()
 	pass # Replace with function body.
 
 func _on_green_square_tween_completed(object, key):
-	if object and key:
+	print(object.name)
+	print(str(key))
+	if object.name == "green" and key == ":margin_left":
 		$background/squares/James_button.visible = true
 		$background/squares/Jesse_button.visible = true
 		$background/squares/James_eye.visible = true
 		$background/squares/Jesse_eye.visible = true
-	
 	pass # Replace with function body.
 
 func _on_Jesse_button_mouse_entered():
@@ -55,7 +54,8 @@ func _on_Jesse_button_mouse_exited():
 
 func _on_Jesse_button_pressed():
 	global.character = "Jesse"
-	$animation.play("red_transit")
+	$background/squares/tween.start()
+	to_the_single_playing_game()
 	pass # Replace with function body.
 
 func _on_James_button_mouse_entered():
@@ -68,5 +68,5 @@ func _on_James_button_mouse_exited():
 
 func _on_James_button_pressed():
 	global.character = "James"
-	$animation.play("green_transit")
+	to_the_single_playing_game()
 	pass # Replace with function body.

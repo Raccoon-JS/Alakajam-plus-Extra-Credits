@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SlowJazz-by-AlexMcCulloch.wav-ba1130113bd6d8f6a32c1dc3784dbb5c.sample"
+
+[deps]
+
+source_file="res://sounds/musics/licensed_music/SlowJazz-by-AlexMcCulloch.wav"
+dest_files=[ "res://.import/SlowJazz-by-AlexMcCulloch.wav-ba1130113bd6d8f6a32c1dc3784dbb5c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
