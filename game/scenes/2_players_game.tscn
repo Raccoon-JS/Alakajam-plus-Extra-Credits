@@ -136,3 +136,4 @@ margin_bottom = 120.0
 rect_pivot_offset = Vector2( 300, 60 )
 
 [node name="timer" type="Timer" parent="."]
+wait_time = 5.0
