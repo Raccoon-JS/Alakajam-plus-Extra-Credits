@@ -1,7 +1,7 @@
 # 6th Alakajam! + Extra Credits Game Jam 4
 An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcements) and [Extra Credits Game Jam 4](https://itch.io/jam/extra-credits-game-jam-4)
 
-<p align="center"><iframe src="https://itch.io/embed/432308?bg_color=c1dee2&amp;fg_color=417d95&amp;link_color=417d95&amp;border_color=5e9ab2" width="552" height="167" frameborder="0"></iframe></p>
+<p align="center"><iframe src="https://itch.io/embed/432308?linkback=true&amp;bg_color=c1dee2&amp;fg_color=417d95&amp;link_color=417d95&amp;border_color=5e9ab2" width="552" height="167" frameborder="0"></iframe></p>
 
 <p align="center" >
 <b>The title: CONNECT THE WOUNDS</b>
