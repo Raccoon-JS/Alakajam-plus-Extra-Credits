@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/in-the-city_JoshuaMcLean.wav-5a991282046a9140dc4f725ebbc68bab.sample"
+
+[deps]
+
+source_file="res://sounds/musics/licensed_music/in-the-city_JoshuaMcLean.wav"
+dest_files=[ "res://.import/in-the-city_JoshuaMcLean.wav-5a991282046a9140dc4f725ebbc68bab.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

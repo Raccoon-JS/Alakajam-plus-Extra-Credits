@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=2]
@@ -6,8 +6,9 @@
 [ext_resource path="res://images/James_eye_green.jpg" type="Texture" id=4]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=5]
 [ext_resource path="res://images/white_default.png" type="Texture" id=6]
-[ext_resource path="res://sounds/ShotFired.wav" type="AudioStream" id=7]
-[ext_resource path="res://scripts/directions.gd" type="Script" id=8]
+[ext_resource path="res://sounds/musics/licensed_music/in-the-city_JoshuaMcLean.wav" type="AudioStream" id=7]
+[ext_resource path="res://sounds/ShotFired.wav" type="AudioStream" id=8]
+[ext_resource path="res://scripts/directions.gd" type="Script" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -316,12 +317,16 @@ margin_right = 400.0
 margin_bottom = 80.0
 texture = ExtResource( 6 )
 
-[node name="sound_effect" type="AudioStreamPlayer" parent="."]
+[node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-volume_db = -38.235
+autoplay = true
+
+[node name="sound_effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -12.0
 
 [node name="directions" type="Node" parent="."]
-script = ExtResource( 8 )
+script = ExtResource( 9 )
 
 [node name="left_timer" type="Timer" parent="."]
 wait_time = 5.0

@@ -37,6 +37,8 @@ var jesse_stories = ["res://images/photos/Jesse/shirt_red_1.png",
 					"res://images/photos/Jesse/shirt_red_4.png"]
 
 func _ready():
+	$music.play()
+	set_process(true)
 	james_panel = 0
 	jesse_panel = 0
 	
@@ -88,6 +90,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if delta:
+		if !$music.playing:
+			$music.play()
 		if right_done and left_done:
 			global.goto_scene("res://scenes/the_end.tscn")
 	pass
