@@ -113,6 +113,7 @@ margin_right = 1200.0
 margin_bottom = 600.0
 
 [node name="buttons" type="HBoxContainer" parent="button_space"]
+margin_top = 110.0
 margin_right = 1200.0
 margin_bottom = 200.0
 custom_constants/separation = 200
@@ -121,7 +122,7 @@ alignment = 1
 [node name="quit" type="Button" parent="button_space/buttons"]
 margin_left = 147.0
 margin_right = 280.0
-margin_bottom = 200.0
+margin_bottom = 90.0
 custom_fonts/font = SubResource( 2 )
 text = "quit"
 flat = true
@@ -129,7 +130,7 @@ flat = true
 [node name="start" type="Button" parent="button_space/buttons"]
 margin_left = 480.0
 margin_right = 635.0
-margin_bottom = 200.0
+margin_bottom = 90.0
 custom_fonts/font = SubResource( 3 )
 text = "start"
 flat = true
@@ -137,12 +138,13 @@ flat = true
 [node name="credits" type="Button" parent="button_space/buttons"]
 margin_left = 835.0
 margin_right = 1052.0
-margin_bottom = 200.0
+margin_bottom = 90.0
 custom_fonts/font = SubResource( 4 )
 text = "credits"
 flat = true
 
 [node name="transition" type="Control" parent="."]
+pause_mode = 2
 visible = false
 margin_right = 1200.0
 margin_bottom = 600.0

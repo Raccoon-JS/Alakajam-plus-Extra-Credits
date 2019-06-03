@@ -11,6 +11,8 @@ var transition_action
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$bg_and_title.pause_mode = true
+	$button_space.pause_mode = true
 	$animations.play("beginning-fade")
 	normal_color()
 	pass # Replace with function body.
@@ -66,6 +68,8 @@ func _on_credits_pressed():
 
 func _on_animations_finished(anim_name):
 	if anim_name == "beginning-fade":
+		$button_space.pause_mode = false
+		$bg_and_title.pause_mode = false
 		$animations.play("logo-moving")
 	elif anim_name == "ending-fade":
 		if transition_action == "credits":
