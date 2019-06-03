@@ -1,8 +1,10 @@
 # 6th Alakajam! + Extra Credits Game Jam 4
 An entry for both [6th Alakajam!](https://alakajam.com/6th-alakajam/announcements) and [Extra Credits Game Jam 4](https://itch.io/jam/extra-credits-game-jam-4)
 
+Here is [the game's itch.io page](https://raccoon-js.itch.io/connect-the-wounds).
+
 <p align="center" >
-<b>The (working) title of the game: CONNECT THE WOUNDS</b>
+<b>The title: CONNECT THE WOUNDS</b>
 </p>
 <p align="center">
 <img src="https://github.com/Raccoon-JS/Alakajam-plus-Extra-Credits/blob/master/complete_menu_screen.gif">
