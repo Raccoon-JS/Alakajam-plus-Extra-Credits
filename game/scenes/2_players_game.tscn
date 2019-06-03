@@ -1,50 +1,60 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
-[ext_resource path="res://images/Jesse_eye_red.jpg" type="Texture" id=2]
-[ext_resource path="res://images/James_eye_green.jpg" type="Texture" id=3]
-[ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=4]
-[ext_resource path="res://images/white_default.png" type="Texture" id=5]
+[ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://images/Jesse_eye_red.jpg" type="Texture" id=3]
+[ext_resource path="res://images/James_eye_green.jpg" type="Texture" id=4]
+[ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://images/white_default.png" type="Texture" id=6]
+[ext_resource path="res://scripts/directions.gd" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=11]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 40
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 40
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 40
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 40
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 24
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 24
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=7]
 size = 24
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 24
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 24
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=10]
 size = 24
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [node name="2" type="Node"]
 script = ExtResource( 1 )
@@ -58,11 +68,29 @@ margin_right = 600.0
 margin_bottom = 600.0
 color = Color( 0.890196, 0.772549, 0.756863, 1 )
 
+[node name="game_over" type="Label" parent="backgrounds/red_background"]
+margin_right = 600.0
+margin_bottom = 420.0
+custom_fonts/font = SubResource( 11 )
+custom_colors/font_color = Color( 0.635294, 0.427451, 0.4, 1 )
+text = "GAME OVER"
+align = 1
+valign = 1
+
 [node name="green_background" type="ColorRect" parent="backgrounds"]
 margin_left = 600.0
 margin_right = 1200.0
 margin_bottom = 600.0
 color = Color( 0.756863, 0.890196, 0.839216, 1 )
+
+[node name="game_over" type="Label" parent="backgrounds/green_background"]
+margin_right = 600.0
+margin_bottom = 420.0
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 0.254902, 0.580392, 0.509804, 1 )
+text = "GAME OVER"
+align = 1
+valign = 1
 
 [node name="left_screen" type="TextureRect" parent="."]
 margin_left = 100.0
@@ -70,7 +98,7 @@ margin_top = 20.0
 margin_right = 500.0
 margin_bottom = 420.0
 rect_pivot_offset = Vector2( 200, 200 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="right_screen" type="TextureRect" parent="."]
 margin_left = 700.0
@@ -78,9 +106,10 @@ margin_top = 20.0
 margin_right = 1100.0
 margin_bottom = 420.0
 rect_pivot_offset = Vector2( 200, 200 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="times_and_points" type="HBoxContainer" parent="."]
+visible = false
 margin_top = 420.0
 margin_right = 1200.0
 margin_bottom = 470.0
@@ -192,19 +221,19 @@ alignment = 1
 margin_left = 140.0
 margin_right = 220.0
 margin_bottom = 80.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="center" type="TextureRect" parent="left_keys/keys/key_images"]
 margin_left = 260.0
 margin_right = 340.0
 margin_bottom = 80.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="right" type="TextureRect" parent="left_keys/keys/key_images"]
 margin_left = 380.0
 margin_right = 460.0
 margin_bottom = 80.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="right_keys" type="Control" parent="."]
 margin_left = 600.0
@@ -262,19 +291,22 @@ alignment = 1
 margin_left = 140.0
 margin_right = 220.0
 margin_bottom = 80.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="center" type="TextureRect" parent="right_keys/keys/key_images"]
 margin_left = 260.0
 margin_right = 340.0
 margin_bottom = 80.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="right" type="TextureRect" parent="right_keys/keys/key_images"]
 margin_left = 380.0
 margin_right = 460.0
 margin_bottom = 80.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
+
+[node name="directions" type="Node" parent="."]
+script = ExtResource( 7 )
 
 [node name="left_timer" type="Timer" parent="."]
 wait_time = 5.0

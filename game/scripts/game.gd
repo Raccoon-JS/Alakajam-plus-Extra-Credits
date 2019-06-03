@@ -5,6 +5,7 @@ func _ready():
 		if global.character == "Jesse":
 			$background.color = global.red
 			$story.texture = load("res://images/Jesse_eye_red.jpg")
+			$game_over.modulate = global.deep_red
 			$left_side/materials/time_and_points/time.modulate = global.deep_red
 			$left_side/materials/time_and_points/points.modulate = global.deep_red
 			$left_side/materials/key_labels/A.modulate = global.deep_red
@@ -16,6 +17,7 @@ func _ready():
 		elif global.character == "James":
 			$background.color = global.green
 			$story.texture = load("res://images/James_eye_green.jpg")
+			$game_over.modulate = global.deep_green
 			$left_side/materials/time_and_points/time.modulate = global.deep_green
 			$left_side/materials/time_and_points/points.modulate = global.deep_green
 			$left_side/materials/key_labels/A.modulate = global.deep_green
@@ -114,4 +116,11 @@ func character_color(chr, mode):
 			return global.green
 		elif mode == "off":
 			return global.deep_green
+	pass
+
+# (red/green, array of button images - 3, array of image paths - 3, array of small image paths - 3)
+func write_direction(color, buttons, pic_paths, small_pics):
+	pass
+
+func show_direction():
 	pass
