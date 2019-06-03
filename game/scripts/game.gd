@@ -3,6 +3,9 @@ extends Node
 var james_panel
 var jesse_panel
 
+var right_done = false
+var left_done = false
+
 var eyes = ["res://images/Jesse_eye_red.jpg", "res://images/James_eye_green.jpg"]
 
 var james_stories = ["res://images/photos/James/WANTED_green.png", #0
@@ -83,19 +86,21 @@ func _ready():
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if delta:
+		if right_done and left_done:
+			global.goto_scene("res://scenes/the_end.tscn")
+	pass
 
+# This is the problem.
 func _input(event):
-	if name == "2":
+	if (name == "1" or "@1@2") and (global.character == "James" or global.character == "Jesse"):
+		_left_side(event)
+	else:
 		_another_left_side(event)
 		_right_side(event)
 		if event.is_action_pressed("S_key") and event.is_action_pressed("K_key") and $right_screen.visible == false and $left_screen.visible == false:
 			global.goto_scene("res://scenes/the_end.tscn")
-	if name == "1" or "@1@2":
-		print(name)
-		_left_side(event)
-	
 	pass
 
 func _left_side(event):
@@ -103,15 +108,15 @@ func _left_side(event):
 	#	$left_side/materials/keys/left.modulate = character_color(global.character, "on")
 	#if event.is_action_released("A_key"):
 	#	$left_side/materials/keys/left.modulate = character_color(global.character, "off")
-		
-	if event.is_action_pressed("S_key"):
-		$left_side/materials/keys/center.modulate = character_color(global.character, "on")
-		if global.character == "James":
-			james_panel += 1
-		elif global.character == "Jesse":
-			jesse_panel += 1
-	if event.is_action_released("S_key"):
-		$left_side/materials/keys/center.modulate = character_color(global.character, "off")
+	if (global.character == "James" or global.character == "Jesse"):
+		if event.is_action_pressed("S_key"):
+			$left_side/materials/keys/center.modulate = character_color(global.character, "on")
+			if global.character == "James":
+				james_panel += 1
+			elif global.character == "Jesse":
+				jesse_panel += 1
+		if event.is_action_released("S_key"):
+			$left_side/materials/keys/center.modulate = character_color(global.character, "off")
 		#if event.is_action_pressed("D_key"):
 		#	$left_side/materials/keys/right.modulate = character_color(global.character, "on")
 		#if event.is_action_released("D_key"):
@@ -126,6 +131,7 @@ func _another_left_side(event):
 		jesse_panel += 1
 	if event.is_action_released("S_key"):
 		$left_keys/keys/key_images/center.modulate = character_color("Jesse", "off")
+	jesse_outline(jesse_panel)
 	pass
 
 func _right_side(event):
@@ -144,6 +150,7 @@ func _right_side(event):
 	#	$right_keys/keys/key_images/right.modulate = character_color("James", "on")
 	#if event.is_action_released("L_key"):
 	#	$right_keys/keys/key_images/right.modulate = character_color("James", "off")
+	james_outline(james_panel)
 	pass
 
 func character_color(chr, mode):
@@ -212,7 +219,8 @@ func james_outline(panel):
 			21:
 				$right_screen.texture = load(james_stories[13])
 			22:
-				single_player_move()
+				$right_screen.visible = false
+				right_done = true
 		#$right_screen.texture
 	else:
 		match(panel):
@@ -291,6 +299,7 @@ func jesse_outline(panel):
 					$left_screen.texture = load(jesse_stories[11])
 				13:
 					$left_screen.visible = false
+					left_done = true
 	else:
 		match(panel):
 				1:
