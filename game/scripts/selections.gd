@@ -30,13 +30,13 @@ func _on_tween_started(object, key):
 
 func _on_animation_animation_finished(anim_name):
 	if anim_name == "gone":
+		global.players = 2
 		gone_buttons()
 		global.goto_scene("res://scenes/2_players_game.tscn")
 	pass # Replace with function body.
 
 func _on_green_square_tween_completed(object, key):
-	print(object.name)
-	print(str(key))
+
 	if object.name == "green" and key == ":margin_left":
 		$background/squares/James_button.visible = true
 		$background/squares/Jesse_button.visible = true

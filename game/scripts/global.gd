@@ -4,6 +4,7 @@ var current_scene = null
 var new_scene = null
 var players
 var character
+var single_playthrough
 
 # Colors
 var red
@@ -21,6 +22,8 @@ func _ready():
 	deep_green = Color("#419482")
 	blue = Color("#C1DEE2")
 	deep_blue = Color("#417D95")
+	
+	single_playthrough = 0
 	
 	players = 0
 	character = "no one"
