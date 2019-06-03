@@ -27,6 +27,10 @@ func _ready():
 		$times_and_points/left/left_points.modulate = global.deep_red
 		$times_and_points/right/right_time.modulate = global.deep_green
 		$times_and_points/right/right_points.modulate = global.deep_green
+		$left_keys/keys/labels.modulate = global.deep_red
+		$left_keys/keys/key_images.modulate = global.deep_red
+		$right_keys/keys/labels.modulate = global.deep_green
+		$right_keys/keys/key_images.modulate = global.deep_green
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
