@@ -11,11 +11,19 @@ var transition_action
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$music.play()
+	set_process(true)
 	$bg_and_title.pause_mode = true
 	$button_space.pause_mode = true
 	$animations.play("beginning-fade")
 	normal_color()
 	pass # Replace with function body.
+
+func _process(delta):
+	if delta:
+		if !$music.playing:
+			 $music.play()
+	pass
 
 func normal_color():
 	$bg_and_title/background.color = global.blue

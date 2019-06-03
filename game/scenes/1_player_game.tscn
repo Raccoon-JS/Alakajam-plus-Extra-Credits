@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://images/white_default.png" type="Texture" id=4]
-[ext_resource path="res://scripts/directions.gd" type="Script" id=5]
+[ext_resource path="res://sounds/ShotFired.wav" type="AudioStream" id=5]
+[ext_resource path="res://scripts/directions.gd" type="Script" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -93,9 +94,9 @@ align = 1
 valign = 1
 
 [node name="key_labels" type="HBoxContainer" parent="left_side/materials"]
-margin_top = 197.0
+margin_top = 183.0
 margin_right = 600.0
-margin_bottom = 222.0
+margin_bottom = 236.0
 custom_constants/separation = 100
 alignment = 1
 
@@ -110,11 +111,13 @@ align = 1
 valign = 1
 
 [node name="S" type="Label" parent="left_side/materials/key_labels"]
-margin_left = 293.0
-margin_right = 307.0
-margin_bottom = 25.0
+margin_left = 265.0
+margin_right = 335.0
+margin_bottom = 53.0
 custom_fonts/font = SubResource( 5 )
-text = "S"
+text = "Press
+S"
+align = 1
 
 [node name="D" type="Label" parent="left_side/materials/key_labels"]
 visible = false
@@ -125,9 +128,9 @@ custom_fonts/font = SubResource( 6 )
 text = "D"
 
 [node name="keys" type="HBoxContainer" parent="left_side/materials"]
-margin_top = 322.0
+margin_top = 336.0
 margin_right = 600.0
-margin_bottom = 402.0
+margin_bottom = 416.0
 grow_horizontal = 0
 grow_vertical = 0
 custom_constants/separation = 20
@@ -153,7 +156,11 @@ margin_right = 390.0
 margin_bottom = 80.0
 texture = ExtResource( 4 )
 
+[node name="sound_effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -30.588
+
 [node name="directions" type="Node" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 6 )
 
 [node name="timer" type="Timer" parent="."]

@@ -11,6 +11,6 @@ func _process(delta):
 			$music.play()
 	pass
 
-func _on_menu_pressed():
+func _on_return_pressed():
 	global.goto_scene("res://scenes/menu.tscn")
 	pass # Replace with function body.

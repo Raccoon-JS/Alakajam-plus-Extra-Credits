@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/menu.gd" type="Script" id=1]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://images/Connect_The_Wounds.png" type="Texture" id=3]
+[ext_resource path="res://sounds/musics/licensed_music/SlowJazz-by-AlexMcCulloch.wav" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
@@ -153,6 +154,10 @@ margin_bottom = 600.0
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 1200.0
 margin_bottom = 600.0
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
 
 [node name="animations" type="AnimationPlayer" parent="."]
 anims/beginning-fade = SubResource( 5 )

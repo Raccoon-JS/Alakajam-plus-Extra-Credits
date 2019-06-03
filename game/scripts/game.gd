@@ -110,6 +110,7 @@ func _left_side(event):
 	#	$left_side/materials/keys/left.modulate = character_color(global.character, "off")
 	if (global.character == "James" or global.character == "Jesse"):
 		if event.is_action_pressed("S_key"):
+			$sound_effect.play()
 			$left_side/materials/keys/center.modulate = character_color(global.character, "on")
 			if global.character == "James":
 				james_panel += 1
@@ -128,6 +129,7 @@ func _left_side(event):
 func _another_left_side(event):
 	if event.is_action_pressed("S_key"):
 		$left_keys/keys/key_images/center.modulate = character_color("Jesse", "on")
+		$sound_effect.play()
 		jesse_panel += 1
 	if event.is_action_released("S_key"):
 		$left_keys/keys/key_images/center.modulate = character_color("Jesse", "off")
@@ -142,6 +144,7 @@ func _right_side(event):
 
 	if event.is_action_pressed("K_key"):
 		$right_keys/keys/key_images/center.modulate = character_color("James", "on")
+		$sound_effect.play()
 		james_panel += 1
 	if event.is_action_released("K_key"):
 		$right_keys/keys/key_images/center.modulate = character_color("James", "off")

@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scripts/credits.gd" type="Script" id=1]
 [ext_resource path="res://images/ECGJ_4_monochrome.png" type="Texture" id=2]
 [ext_resource path="res://images/Alakajam_logo_game_monochrome.png" type="Texture" id=3]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://sounds/musics/new_musics/TheScruffyWitch.wav" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
-size = 14
+size = 13
 extra_spacing_top = 2
 extra_spacing_bottom = 2
 font_data = ExtResource( 4 )
@@ -46,7 +47,7 @@ margin_bottom = 600.0
 margin_left = 20.0
 margin_top = 20.0
 margin_right = 600.0
-margin_bottom = 501.0
+margin_bottom = 500.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.254902, 0.490196, 0.584314, 1 )
 text = "Connect the Wounds is a unique visual novel about connecting pieces to discover about the mystery surrounding one pistol duel.
@@ -63,15 +64,16 @@ The challenges of the game jam are:
 - \"Extra\"-Vert (Make a game that can be played with other people, in person).
 
 The theme of 6th Alakajam! is \"DUEL\". The duration is 48 hours for competitors and 72 for non-competitors.
-The coding, the music, and the design are all done by myself.
+The coding and the design are all done by myself.
+Except the music. The menu theme (Slow Jazz) was done by Alex McCulloch - Public Domain. And I licensed an actual music - will be available after the game jam.
 "
 autowrap = true
 
 [node name="tools" type="Label" parent="control"]
-margin_left = 590.0
-margin_top = 270.0
-margin_right = 830.0
-margin_bottom = 372.0
+margin_left = 610.0
+margin_top = 380.0
+margin_right = 850.0
+margin_bottom = 482.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.254902, 0.490196, 0.584314, 1 )
 text = "Tools used in this game:
@@ -89,4 +91,8 @@ margin_bottom = 580.0
 custom_fonts/font = SubResource( 3 )
 text = "menu"
 flat = true
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -12.0
 [connection signal="pressed" from="control/menu" to="." method="_on_menu_pressed"]

@@ -1,8 +1,15 @@
 extends Node
 
 func _ready():
+	$music.play()
 	$background/squares/tween.interpolate_property($background/squares/green,"margin_left",0.0,600.0,0.9,Tween.TRANS_CIRC,Tween.EASE_IN)
 	pass # Replace with function body.
+
+func _process(delta):
+	if delta:
+		if !$music.playing:
+			$music.play()
+	pass
 
 func gone_buttons():
 	$many_players.queue_free()

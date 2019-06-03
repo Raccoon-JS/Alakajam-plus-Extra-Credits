@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scripts/selections.gd" type="Script" id=1]
 [ext_resource path="res://images/Jesse_eye_red.jpg" type="Texture" id=2]
 [ext_resource path="res://images/James_eye_green.jpg" type="Texture" id=3]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://sounds/musics/old_music/voice_from_the_void_(remixed).wav" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 42
@@ -195,6 +196,10 @@ custom_colors/font_color_hover = Color( 0.160784, 0.372549, 0.32549, 1 )
 custom_colors/font_color_pressed = Color( 0.160784, 0.372549, 0.32549, 1 )
 text = "TWO PLAYERS"
 flat = true
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
 
 [node name="animation" type="AnimationPlayer" parent="."]
 anims/gone = SubResource( 5 )

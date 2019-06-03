@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=2]
@@ -6,23 +6,16 @@
 [ext_resource path="res://images/James_eye_green.jpg" type="Texture" id=4]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=5]
 [ext_resource path="res://images/white_default.png" type="Texture" id=6]
-[ext_resource path="res://scripts/directions.gd" type="Script" id=7]
-
-[sub_resource type="DynamicFont" id=11]
-size = 32
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=12]
-size = 32
-font_data = ExtResource( 2 )
+[ext_resource path="res://sounds/ShotFired.wav" type="AudioStream" id=7]
+[ext_resource path="res://scripts/directions.gd" type="Script" id=8]
 
 [sub_resource type="DynamicFont" id=1]
-size = 40
-font_data = ExtResource( 5 )
+size = 32
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 40
-font_data = ExtResource( 5 )
+size = 32
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 40
@@ -33,11 +26,11 @@ size = 40
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 24
+size = 40
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 24
+size = 40
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=7]
@@ -45,7 +38,6 @@ size = 24
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=8]
-size = 24
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=9]
@@ -53,6 +45,13 @@ size = 24
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=10]
+size = 24
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=12]
 size = 24
 font_data = ExtResource( 5 )
 
@@ -71,7 +70,7 @@ color = Color( 0.890196, 0.772549, 0.756863, 1 )
 [node name="game_over" type="Label" parent="backgrounds/red_background"]
 margin_right = 600.0
 margin_bottom = 420.0
-custom_fonts/font = SubResource( 11 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.635294, 0.427451, 0.4, 1 )
 text = "THE END"
 align = 1
@@ -86,7 +85,7 @@ color = Color( 0.756863, 0.890196, 0.839216, 1 )
 [node name="game_over" type="Label" parent="backgrounds/green_background"]
 margin_right = 600.0
 margin_bottom = 420.0
-custom_fonts/font = SubResource( 12 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.254902, 0.580392, 0.509804, 1 )
 text = "THE END"
 align = 1
@@ -126,7 +125,7 @@ custom_constants/separation = 60
 margin_top = 4.0
 margin_right = 120.0
 margin_bottom = 45.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "time:"
 align = 1
 valign = 1
@@ -136,7 +135,7 @@ margin_left = 180.0
 margin_top = 4.0
 margin_right = 348.0
 margin_bottom = 45.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 text = "points:"
 align = 1
 valign = 1
@@ -151,7 +150,7 @@ custom_constants/separation = 60
 margin_top = 4.0
 margin_right = 120.0
 margin_bottom = 45.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 5 )
 text = "time:"
 align = 1
 valign = 1
@@ -161,7 +160,7 @@ margin_left = 180.0
 margin_top = 4.0
 margin_right = 348.0
 margin_bottom = 45.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 6 )
 text = "points:"
 align = 1
 valign = 1
@@ -173,13 +172,14 @@ margin_bottom = 600.0
 rect_pivot_offset = Vector2( 300, 50 )
 
 [node name="keys" type="VBoxContainer" parent="left_keys"]
+margin_top = -10.0
 margin_right = 600.0
-margin_bottom = 100.0
+margin_bottom = 123.0
 rect_pivot_offset = Vector2( 300, 60 )
 
 [node name="labels" type="HBoxContainer" parent="left_keys/keys"]
 margin_right = 600.0
-margin_bottom = 25.0
+margin_bottom = 39.0
 custom_constants/separation = 105
 alignment = 1
 
@@ -188,17 +188,18 @@ visible = false
 margin_left = 174.0
 margin_right = 188.0
 margin_bottom = 25.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 7 )
 text = "A"
 align = 1
 valign = 1
 
 [node name="S" type="Label" parent="left_keys/keys/labels"]
-margin_left = 293.0
-margin_right = 307.0
-margin_bottom = 25.0
-custom_fonts/font = SubResource( 6 )
-text = "S"
+margin_left = 275.0
+margin_right = 325.0
+margin_bottom = 39.0
+custom_fonts/font = SubResource( 8 )
+text = "Press
+S"
 align = 1
 valign = 1
 
@@ -207,15 +208,15 @@ visible = false
 margin_left = 352.0
 margin_right = 366.0
 margin_bottom = 25.0
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 9 )
 text = "D"
 align = 1
 valign = 1
 
 [node name="key_images" type="HBoxContainer" parent="left_keys/keys"]
-margin_top = 29.0
+margin_top = 43.0
 margin_right = 600.0
-margin_bottom = 109.0
+margin_bottom = 123.0
 custom_constants/separation = 40
 alignment = 1
 
@@ -247,13 +248,14 @@ margin_bottom = 600.0
 rect_pivot_offset = Vector2( 300, 50 )
 
 [node name="keys" type="VBoxContainer" parent="right_keys"]
+margin_top = -10.0
 margin_right = 600.0
-margin_bottom = 100.0
+margin_bottom = 123.0
 rect_pivot_offset = Vector2( 300, 60 )
 
 [node name="labels" type="HBoxContainer" parent="right_keys/keys"]
 margin_right = 600.0
-margin_bottom = 25.0
+margin_bottom = 39.0
 custom_constants/separation = 105
 alignment = 1
 
@@ -262,17 +264,18 @@ visible = false
 margin_left = 174.0
 margin_right = 188.0
 margin_bottom = 25.0
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 10 )
 text = "J"
 align = 1
 valign = 1
 
 [node name="K" type="Label" parent="right_keys/keys/labels"]
-margin_left = 293.0
-margin_right = 307.0
-margin_bottom = 25.0
-custom_fonts/font = SubResource( 9 )
-text = "K"
+margin_left = 275.0
+margin_right = 325.0
+margin_bottom = 39.0
+custom_fonts/font = SubResource( 11 )
+text = "Press
+K"
 align = 1
 valign = 1
 
@@ -281,15 +284,15 @@ visible = false
 margin_left = 352.0
 margin_right = 366.0
 margin_bottom = 25.0
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = SubResource( 12 )
 text = "L"
 align = 1
 valign = 1
 
 [node name="key_images" type="HBoxContainer" parent="right_keys/keys"]
-margin_top = 29.0
+margin_top = 43.0
 margin_right = 600.0
-margin_bottom = 109.0
+margin_bottom = 123.0
 custom_constants/separation = 40
 alignment = 1
 
@@ -313,8 +316,12 @@ margin_right = 400.0
 margin_bottom = 80.0
 texture = ExtResource( 6 )
 
+[node name="sound_effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -38.235
+
 [node name="directions" type="Node" parent="."]
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="left_timer" type="Timer" parent="."]
 wait_time = 5.0
