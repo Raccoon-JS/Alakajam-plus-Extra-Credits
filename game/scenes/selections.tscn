@@ -5,7 +5,7 @@
 [ext_resource path="res://images/James_eye_green.jpg" type="Texture" id=3]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://sounds/musics/old_music/voice_from_the_void_(remixed).wav" type="AudioStream" id=6]
+[ext_resource path="res://sounds/musics/licensed_music/Mujo情 - Gangster.wav" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 42

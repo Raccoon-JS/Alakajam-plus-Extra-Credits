@@ -63,6 +63,8 @@ func _on_quit_pressed():
 	pass # Replace with function body.
 
 func _on_start_pressed():
+	global.character = "no one"
+	global.single_playthrough = 0
 	$transition.visible = true
 	transition_action = "start"
 	$animations.play("ending-fade")

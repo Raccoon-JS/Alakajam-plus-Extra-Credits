@@ -5,7 +5,7 @@
 [ext_resource path="res://images/Alakajam_logo_game_monochrome.png" type="Texture" id=3]
 [ext_resource path="res://fonts/futur.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://fonts/Courier-Mechanical.otf" type="DynamicFontData" id=5]
-[ext_resource path="res://sounds/musics/new_musics/TheScruffyWitch.wav" type="AudioStream" id=6]
+[ext_resource path="res://sounds/musics/licensed_music/Mujo情 - Gangster.wav" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 13
@@ -65,8 +65,7 @@ The challenges of the game jam are:
 
 The theme of 6th Alakajam! is \"DUEL\". The duration is 48 hours for competitors and 72 for non-competitors.
 The coding and the design are all done by myself.
-Except the music. The menu theme (Slow Jazz) was done by Alex McCulloch - which is Public Domain, and the gameplay music (In the City) was done by Joshua McLean under the Creative Commons Attribution-ShareAlike 4.0 International license. And I actually licensed a copyrighted music - which will be available after the Game Jams.
-"
+Except the music. The menu theme (Slow Jazz) was done by Alex McCulloch - which is Public Domain, and the gameplay music (In the City) was done by Joshua McLean under the Creative Commons Attribution-ShareAlike 4.0 International license. The selection and credits screen music is Gangster by Mujo情 from their album Clouds, all done with a special permission."
 autowrap = true
 
 [node name="tools" type="Label" parent="control"]
